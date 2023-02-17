@@ -5,10 +5,21 @@
     </head>
     <body>
         <script>
-            function Solution2(a, b, c) {
+            function triangle(a, b, c) {
+                const x = a
+                const y = b
+                const z = c
+                let result 
                 
+                result = a + b > c && a + c > b && b + c > a
+
+                if(result === true){
+                    return "Yes"
+                }else if(result === false){
+                    return "No"
+                }
             }
-            console.log(solution2(6, 4, 9));
+            console.log(triangle(5, 7, 2))
         </script>
     </body>
 </html>
