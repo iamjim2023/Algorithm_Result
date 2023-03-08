@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Algorithm-Result 7</title>
+  </head>
+  <body>
+    <script>
+     function listNum(...args) {
+            const arr = [...args];
+            let smallest = listNum[0];
+            let result = 0;
+
+
+            for(let i=0; i <arr.length; i++){
+                    if (arr[i] %2 !== 0) {
+                        result = result + arr[i]
+                    }
+                }
+                return result
+            }
+            console.log(listNum(12, 77, 38, 41, 53, 92, 85));
+    </script>
+  </body>
+</html>
