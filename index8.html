@@ -6,13 +6,11 @@
   <body>
     <script>
       function solution(codeDts, carNum) {
-        const arr = [0, 7, 8];
         let result = 0;
 
         for (let i = 0; i < carNum.length; i++) {
-          const last2Num = carNum[i] % 100;
-          const last1Num = last2Num % 10;
-          if (arr.includes(codeDts) || last1Num === codeDts) {
+          const last1Num = carNum[i] % 10;
+          if (last1Num === codeDts) {
             result++;
           }
         }
