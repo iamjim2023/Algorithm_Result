@@ -8,21 +8,22 @@
       function solution(...args) {
         const arr = [...args];
         let result = 0;
-        let smallest = arr[3];
+        let smallest = arr[0];
 
         for (let i = 0; i < arr.length; i++) {
           if (arr[i] % 2 !== 0) {
             result = result + arr[i];
             if (arr[i] < smallest) {
-                smallest = arr[i];
+                smallest = arr1[i];
             }
           }
         }
         console.log(result)
         console.log(smallest)
         console.log(`${result} \n${smallest}`);
+        return { result, smallest }
       }
-      console.log(solution(12, 77, 38, 41, 53, 92, 85));
+      console.log(solution(0, 77, 38, 41, 53, 92, 85));
     </script>
   </body>
 </html>
